@@ -1,45 +1,53 @@
-# template-empty
-_description: An empty template for your code sample_
+# ruby-email-read
 
-Please include this sample in the [org readme](https://github.com/nylas-samples/.github/blob/main/profile/README.md)?
+This sample will show you to easily read your email with the Nylas Ruby SDK.
 
-<br />
+You can follow along step-by-step in our blog post ["How to Read Email Inbox Data with the Nylas Ruby SDK"](https://www.nylas.com/blog/how-to-read-email-inbox-data-with-nylas-ruby-sdk/).
 
-## Installation
+## Setup
 
-The recommended way to use this sample is ...
+### System dependencies
 
-You can also clone the repository ...
+- Ruby v3.x
 
-You'll find more detailed instructions ...
+### Gather environment variables
 
+You'll need the following values:
 
-<br />
+```text
+ACCESS_TOKEN =
+CLIENT_ID =
+CLIENT_SECRET =
+```
 
+Add the above values to a new `.env` file:
 
-## FAQ
+```bash
+$ touch .env # Then add your env variables
+```
 
-Q: 
+### Install dependencies
 
-A: 
+```bash
+$ gem install nylas
+$ gem install dotenv
+```
 
+## Usage
 
-<br />
+Run the script using the `ruby` command:
 
-## Get support
+```bash
+$ ruby ReadEmail.rb
+```
 
-If you found a bug or want to suggest a new [feature/use case/sample], please file an issue.
+When your message is successfully sent, you'll get the following output in your terminal:
 
-If you have questions, comments, or need help with code, we're here to help:
-- Email us at support@nylas.com
+```text
+[4/7/YYYY] Here's an email subject
+[4/6/YYYY] Another subject
+```
 
-<br />
+## Learn more
 
-## Contributing
-
-...
-
-<br />
-
-## Authors
-- @
+Visit our [Nylas Ruby SDK documentation](https://developer.nylas.com/docs/developer-tools/sdk/ruby-sdk/) to learn more.
