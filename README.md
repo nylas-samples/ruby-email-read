@@ -15,9 +15,8 @@ You can follow along step-by-step in our blog post ["How to Read Email Inbox Dat
 You'll need the following values:
 
 ```text
-ACCESS_TOKEN =
-CLIENT_ID =
-CLIENT_SECRET =
+V3_TOKEN =
+GRANT_ID =
 ```
 
 Add the above values to a new `.env` file:
